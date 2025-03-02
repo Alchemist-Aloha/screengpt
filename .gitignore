@@ -1,0 +1,4 @@
+.venv/
+config.ini
+screen/
+__pycache__/
