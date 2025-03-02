@@ -1,4 +1,4 @@
-.venv/
+/.venv/
 config.ini
-screen/
+/screen
 __pycache__/
