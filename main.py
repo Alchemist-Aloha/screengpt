@@ -16,6 +16,8 @@ class ScreenshotAnalyzerController:
     def __init__(self, root):
         self.root = root
         self.ui = ScreenshotAnalyzerUI(root, self)
+        self.config = configparser.ConfigParser()
+        self.load_settings()
 
     def apply_settings(self):
         settings = self.ui.get_settings()
@@ -31,7 +33,8 @@ class ScreenshotAnalyzerController:
 
         try:
             keyboard.remove_hotkey(self.hotkey)
-        except:
+        except Exception as e:
+            print(f"Error removing hotkey: {e}")  # Handle the case where the hotkey was not set before
             pass
 
         keyboard.add_hotkey(self.hotkey, self.capture_and_send)
