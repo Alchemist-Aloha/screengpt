@@ -25,6 +25,7 @@ class ScreenshotAnalyzerController:
         self.base_url = settings["base_url"]
         self.model = settings["model"]
         self.system_prompt = settings["system_prompt"]
+        self.user_prompt = settings["user_prompt"]
         self.hotkey = settings["hotkey"]
 
         if not self.api_key:
@@ -52,7 +53,10 @@ class ScreenshotAnalyzerController:
             self.ui.api_key.set(settings.get('api_key', ''))
             self.ui.base_url.set(settings.get('base_url', 'https://openrouter.ai/api/v1'))
             self.ui.model.set(settings.get('model', 'google/gemini-2.0-flash-exp:free'))
-            self.ui.system_prompt.set(settings.get('system_prompt', 'You are an expert game advisor. Analyze the provided screenshot of the game. Based on the current game state, provide concise and actionable guidance to the player. Focus on strategic advice, potential moves, and helpful hints. Keep the response short and directly relevant to the screenshot\'s content.'))
+            self.ui.system_prompt_text.delete("1.0", tk.END)
+            self.ui.system_prompt_text.insert("1.0", settings.get('system_prompt', 'You are an expert game advisor. Analyze the provided screenshot of the game. Based on the current game state, provide concise and actionable guidance to the player. Focus on strategic advice, potential moves, and helpful hints. Keep the response short and directly relevant to the screenshot\'s content.'))
+            self.ui.user_prompt_text.delete("1.0", tk.END)
+            self.ui.user_prompt_text.insert("1.0", settings.get('user_prompt', 'Analyze this screenshot and provide game guidance.'))
             self.ui.hotkey.set(settings.get('hotkey', 'ctrl+alt+e'))
 
     def capture_and_send(self):
@@ -79,7 +83,7 @@ class ScreenshotAnalyzerController:
                     {
                         "role": "user",
                         "content": [
-                            {"type": "text", "text": "Analyze this screenshot and provide game guidance."},
+                            {"type": "text", "text": self.user_prompt},
                             {
                                 "type": "image_url",
                                 "image_url": {
