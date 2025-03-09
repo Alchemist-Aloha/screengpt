@@ -6,3 +6,4 @@ build/
 dist/
 screengpt.egg-info/
 *.egg-info/
+__main__.spec
