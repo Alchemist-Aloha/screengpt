@@ -9,7 +9,6 @@ You need an OpenAI compatible API key to use this software.
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Overview
@@ -43,8 +42,18 @@ ScreenGPT uses state-of-the-art AI to analyze and render screen content dynamica
     ```
 
 ## Usage
-Start the application with:
+### Start the application with:
 
-    ```sh
-    python -m screengpt
-    ```
+```sh
+python -m screengpt
+```
+- Input your OpenAI compatible API key when prompted. 
+- Default setting is Openrouter Base URL with free google/gemini-2.0-flash-exp:free model. 
+You can obtain your API key from [OpenRouter](https://openrouter.ai/settings/keys).
+- Modify the system prompt and user prompt as you like. The default one is for game copilot.
+- Depend on your use case, you can change the hotkey to your desired key.
+- Hit "Apply Settings" to start the application. The settings will be saved in config.ini so you don't have to reinput those agin next time.
+- Press the hotkey (default is Ctrl+alt+e) to capture the screenshot and the response will be shown both on the screen and the terminal.
+
+## License
+This project is licensed under the MIT License. 
