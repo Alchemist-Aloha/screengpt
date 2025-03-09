@@ -25,18 +25,16 @@ ScreenGPT uses state-of-the-art AI to analyze and render screen content dynamica
     ```sh
     git clone https://github.com/Alchemist-Aloha/screengpt.git
     ```
-2. Generate a virtual environment (optional but recommended):
+2. Generate a python virtual environment (optional but recommended):
     ```sh
     # pip
     python -m venv .venv
     # or uv
     uv venv
-    ```
-3. Activate the virtual environment (optional but recommended):
-    ```sh
+    # Activate the virtual environment
     .venv\Scripts\activate
     ```
-4. Install the packages:
+3. Install the packages:
     ```sh
     # pip
     pip install -e screengpt
