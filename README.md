@@ -1,8 +1,6 @@
 # ScreenGPT
 
-ScreenGPT is a project that leverages LLM to understand the screen content. 
-It provides response based on the user defined prompts and the screen content.
-You need an OpenAI compatible API key to use this software. 
+ScreenGPT leverages large language models (LLMs) to analyze and understand screen content. It generates responses based on user-defined prompts and the visual input from your screen. To use this software, you will need an OpenAI-compatible API key.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -12,49 +10,50 @@ You need an OpenAI compatible API key to use this software.
 - [License](#license)
 
 ## Overview
-ScreenGPT uses state-of-the-art AI to analyze and render screen content dynamically. It offers a flexible and extensible framework for integrating AI-powered screen interactions into your projects.
+ScreenGPT utilizes advanced LLMs to interpret screen content and provides a flexible, extensible framework for integrating AI-powered screen interactions into your workflow.
 
 ## Features
-- Real-time screen analysis and interaction
-- Customizable LLM system prompts and user prompts
-- Support Openai compatible API
-- Extensible design for future enhancements
+- Real-time screen analysis.
+- Customizable system and user prompts.
+- Support for OpenAI-compatible APIs.
 
 ## Installation
 1. Clone the repository:
     ```sh
     git clone https://github.com/Alchemist-Aloha/screengpt.git
     ```
-2. Generate a python virtual environment (optional but recommended):
+2. Create a Python virtual environment (optional but recommended):
     ```sh
-    # pip
+    # Using pip:
     python -m venv .venv
-    # or uv
+
+    # Or using uv:
     uv venv
-    # Activate the virtual environment
+
+    # Activate the virtual environment:
     .venv\Scripts\activate
     ```
-3. Install the packages:
+3. Install the required packages:
     ```sh
-    # pip
+    # Using pip:
     pip install -e screengpt
-    # or uv
+
+    # Or using uv:
     uv pip install -e screengpt
     ```
 
 ## Usage
-### Start the application with:
-
+### Start the Application:
 ```sh
 python -m screengpt
 ```
-- Input your OpenAI compatible API key when prompted. 
-- Default setting is Openrouter Base URL with free google/gemini-2.0-flash-exp:free model. 
-You can obtain your API key from [OpenRouter](https://openrouter.ai/settings/keys).
-- Modify the system prompt and user prompt as you like. The default one is for game copilot.
-- Depend on your use case, you can change the hotkey to your desired key.
-- Hit "Apply Settings" to start the application. The settings will be saved in config.ini so you don't have to reinput those agin next time.
-- Press the hotkey (default is Ctrl+alt+e) to capture the screenshot and the response will be shown both on the screen and the terminal.
+- Enter your OpenAI-compatible API key when prompted.
+- The default settings use the OpenRouter base URL with the free model: google/gemini-2.0-flash-exp:free.
+- Obtain your API key from [OpenRouter](https://openrouter.ai/settings/keys).
+- Modify the system and user prompts as needed; the default prompt is designed for game copilot assistance.
+- Adjust the hotkey to your preference.
+- Click "Apply Settings" to start the application. The settings will be saved in config.ini, so you won’t need to re-enter them next time.
+- Press the hotkey (default: Ctrl+Alt+E) to capture a screenshot; the response will be displayed both on screen and in the terminal.
 
 ## License
-This project is licensed under the MIT License. 
+This project is licensed under the MIT License.
