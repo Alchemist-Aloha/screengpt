@@ -38,7 +38,10 @@ ScreenGPT uses state-of-the-art AI to analyze and render screen content dynamica
     ```
 4. Install the packages:
     ```sh
+    # pip
     pip install -e screengpt
+    # or uv
+    uv pip install -e screengpt
     ```
 
 ## Usage
