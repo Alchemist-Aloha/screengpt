@@ -2,3 +2,7 @@
 config.ini
 /screen/
 __pycache__/
+build/
+dist/
+screengpt.egg-info/
+*.egg-info/

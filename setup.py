@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="screengpt",
-    version="0.1",
+    version="1.0",
     description="Screenshot Analyzer powered by LLMs",
     author="Alchemist Aloha",
     py_modules=["main", "ui"],
