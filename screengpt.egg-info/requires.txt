@@ -1,0 +1,4 @@
+Pillow
+openai
+pyautogui
+keyboard

@@ -130,7 +130,7 @@ class ScreenshotAnalyzerController:
 
         label = tk.Label(root, text=text, wraplength=screen_width - 20, justify='left', background='white', padx=10, pady=10)
         label.pack()
-
+        print(f"Response: {text}")
         root.update_idletasks()
         label_width = label.winfo_width()
         x = (screen_width - label_width) // 2

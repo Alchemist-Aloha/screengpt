@@ -1,0 +1,50 @@
+# ScreenGPT
+
+ScreenGPT is a project that leverages LLM to understand the screen content. 
+It provides response based on the user defined prompts and the screen content.
+You need an OpenAI compatible API key to use this software. 
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Overview
+ScreenGPT uses state-of-the-art AI to analyze and render screen content dynamically. It offers a flexible and extensible framework for integrating AI-powered screen interactions into your projects.
+
+## Features
+- Real-time screen analysis and interaction
+- Customizable LLM system prompts and user prompts
+- Support Openai compatible API
+- Extensible design for future enhancements
+
+## Installation
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Alchemist-Aloha/screengpt.git
+    ```
+2. Generate a virtual environment (optional but recommended):
+    ```sh
+    # pip
+    python -m venv .venv
+    # or uv
+    uv venv
+    ```
+3. Activate the virtual environment (optional but recommended):
+    ```sh
+    .venv\Scripts\activate
+    ```
+4. Install the packages:
+    ```sh
+    pip install -e screengpt
+    ```
+
+## Usage
+Start the application with:
+
+    ```sh
+    python -m screengpt
+    ```
