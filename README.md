@@ -15,6 +15,7 @@ ScreenGPT utilizes advanced LLMs to interpret screen content and provides a flex
 ## Features
 - Real-time screen analysis.
 - Customizable system and user prompts.
+- Graphical user interface (GUI) for easy configuration.
 - Support for OpenAI-compatible APIs.
 
 ## Installation
@@ -47,6 +48,8 @@ ScreenGPT utilizes advanced LLMs to interpret screen content and provides a flex
 ```sh
 python -m screengpt
 ```
+or use provided Windows X64 executable. 
+
 - Enter your OpenAI-compatible API key when prompted.
 - The default settings use the OpenRouter base URL with the free model: google/gemini-2.0-flash-exp:free.
 - Obtain your API key from [OpenRouter](https://openrouter.ai/settings/keys).
